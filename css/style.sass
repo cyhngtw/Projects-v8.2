@@ -1,0 +1,27 @@
+$primary-dark-color: black
+$secondary-light-color: white
+$third-color: grey
+
+$primary-dark-text-color: black
+$secondary-light-text-color: white
+$third-text-color: grey
+
+$fontone: 'Lato', sans-serif
+$fonttwo: 'Montserrat', sans-serif
+$fontthree: 'Turret Road', cursive
+
+$small: 480px
+$large: 880px
+
+//the backgroundcolor for the body is just for testing the media query
+body
+	@media only screen and (max-width: 480px)
+		background-color: red
+	@media only screen and (min-width: $small + 1px) and (max-width: $large - 1px)
+		background-color: green
+	@media only screen and (min-width: 800px)
+		background-color: blue
+
+//@media only screen and (max-width: 480px)
+//@media only screen and (min-width: $small + 1px) and (max-width: $large - 1px)
+//@media only screen and (min-width: 800px)
